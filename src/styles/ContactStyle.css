@@ -1,0 +1,273 @@
+/* Banner */
+
+.contact_banner {
+  background: url("../assets/footer/banner-1.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 180px 0;
+  position: relative;
+}
+
+.contact_banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.contact_banner_content {
+  position: relative;
+  z-index: 2;
+}
+
+.contact_banner_content h1 {
+  font-family: var(--lilita-font);
+  font-size: 90px;
+  color: var(--white);
+}
+
+.contact_banner_content p {
+  color: var(--white);
+  font-size: 20px;
+}
+
+/* Info */
+
+.contact_info {
+  padding: 100px 0;
+}
+
+.info_card {
+  background: var(--light-grey);
+  text-align: center;
+  padding: 40px 25px;
+  border-radius: 10px;
+  height: 100%;
+  transition: 0.4s;
+}
+
+.info_card:hover {
+  transform: translateY(-8px);
+}
+
+.info_card i {
+  font-size: 50px;
+  color: var(--light-red);
+}
+
+.info_card h4 {
+  margin: 20px 0;
+}
+
+.info_card p {
+  color: var(--grey);
+  margin-bottom: 5px;
+}
+
+/* Contact Form */
+
+.contact_form_section {
+  padding-bottom: 100px;
+}
+
+.contact_text h2 {
+  color: var(--light-red);
+  font-size: 55px;
+}
+
+.contact_text p {
+  color: var(--grey);
+  margin: 25px 0;
+}
+
+.opening_hours {
+  background: var(--yellow);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.opening_hours h4 {
+  color: var(--bg-coffee);
+}
+
+.opening_hours ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.opening_hours li {
+  margin-bottom: 10px;
+}
+
+.contact_form {
+  background: var(--light-grey);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.contact_form .form-control {
+  padding: 14px;
+  border: none;
+}
+
+.contact_form textarea {
+  resize: none;
+}
+
+.contact_form button {
+  width: 100%;
+}
+
+/* Map */
+
+.map_section iframe {
+  display: block;
+}
+
+/* Tablet */
+
+@media (max-width: 992px) {
+  .contact_banner {
+    padding: 140px 0;
+    background-attachment: scroll;
+  }
+
+  .contact_banner_content h1 {
+    font-size: 65px;
+  }
+
+  .info_card{
+    margin: 10px;
+  }
+  .info_card:hover{
+    transform: none;
+  }
+
+  .info_card h4{
+    font-size: 16px;
+  }
+
+  .contact_text {
+    margin-bottom: 40px;
+  }
+
+  .contact_text h2 {
+    font-size: 42px;
+  }
+
+  .contact_text p{
+    padding: 0 10px;
+  }
+
+  .opening_hours{
+    margin: 0 10px;
+    font-size: 16px;
+  }
+
+  .opening_hours h4{
+    font-size: 18px;
+  }
+
+  .contact_form {
+    padding: 25px 20px;
+    margin: 10px;
+  }
+
+  .contact_form .form-control {
+    padding: 12px 15px;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .contact_form textarea {
+    text-align: left;
+  }
+
+  .contact_form .form-control::placeholder {
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .contact_form .order_now {
+    width: 100%;
+    padding: 12px !important;
+    font-size: 16px !important;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .contact_banner {
+    padding: 120px 0;
+  }
+
+  .contact_banner_content h1 {
+    font-size: 45px;
+  }
+
+  .contact_banner_content p {
+    font-size: 16px;
+  }
+
+  .contact_info {
+    padding: 70px 0;
+  }
+
+  .info_card {
+    padding: 30px 20px;
+  }
+
+  .info_card i {
+    font-size: 40px;
+  }
+
+  .contact_form_section {
+    padding-bottom: 70px;
+  }
+
+  .contact_text {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .contact_text h2 {
+    font-size: 32px;
+  }
+
+  .opening_hours {
+    text-align: left;
+  }
+
+  .contact_form {
+    padding: 25px;
+  }
+
+  .map_section iframe {
+    height: 300px;
+  }
+}
+
+/* Small Mobile */
+
+@media (max-width: 480px) {
+  .contact_banner_content h1 {
+    font-size: 36px;
+  }
+
+  .contact_text h2 {
+    font-size: 28px;
+  }
+
+  .contact_form {
+    padding: 20px;
+  }
+
+  .contact_form .form-control {
+    padding: 12px;
+  }
+
+  .map_section iframe {
+    height: 250px;
+  }
+}

@@ -103,6 +103,17 @@ a {
   background: transparent !important;
   border-color: var(--white) !important;
 }
+.btn_yellow{
+  color: var(--light-black) !important;
+  background: var(--yellow) !important;
+  border-color: var(--yellow) !important;
+}
+.btn_yellow:hover,
+.btn_yellow:focus{
+  color: var(--yellow) !important;
+  background: transparent !important;
+  border-color: var(--yellow) !important;
+}
 .btn_red {
   color: var(--white) !important;
   background: var(--light-red) !important;

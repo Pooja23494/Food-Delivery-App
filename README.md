@@ -28,25 +28,30 @@ A modern and responsive Food Delivery web application built using React.js. User
 
 ---
 
-## 📂 Project Structure
+## 📁 Folder Structure
 
-Food-Delivery-App/
+```bash
+food-delivery-app
 │
-├── public/
+├── public/                 # Static assets
 │
 ├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── pages/
-│   ├── styles/
-│   ├── App.jsx
-│   ├── index.css
-│   └── main.jsx
+│   ├── assets/             # Images, icons, and media files
+│   ├── components/         # Reusable React components
+│   ├── pages/              # Application pages
+│   ├── styles/             # Custom CSS files
+│   ├── App.jsx             # Main application component
+│   ├── main.jsx            # Application entry point
+│   └── index.css           # Global styles
 │
-├── index.html
-├── package.json
-├── vite.config.js
-└── README.md
+├── .gitignore              # Git ignore rules
+├── eslint.config.js        # ESLint configuration
+├── index.html              # Root HTML file
+├── package.json            # Project dependencies
+├── package-lock.json       # Dependency lock file
+├── vite.config.js          # Vite configuration
+└── README.md               # Project documentation
+```
 
 ## ⚙️ Installation & Setup
 
